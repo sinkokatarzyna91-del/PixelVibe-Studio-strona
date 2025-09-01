@@ -1,7 +1,7 @@
 // Ustawienia (dostosuj tutaj)
-const BOT_NAME = 'MyBot';
+const BOT_NAME = 'PixelVibe Studio';
 const INVITE_LINK = 'https://discord.com/oauth2/authorize?client_id=ID&scope=bot%20applications.commands&permissions=8';
-const SUPPORT_LINK = 'https://discord.gg/your-support';
+const SUPPORT_LINK = 'https://discord.gg/fcFXVmBScc';
 const API_STATUS_URL = ''; // opcjonalne: endpoint JSON {status:'online'|'offline', guilds:123, users:456, last_activity:'2025-08-30T12:34:56Z'}
 
 // Inicjalizacja UI
