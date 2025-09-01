@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyBot — Oficjalna strona</title>
+  <meta name="description" content="Oficjalna strona MyBot — komendy, zaproszenie i status."/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.svg" alt="MyBot logo" class="logo" />
+      <div>
+        <h1 id="bot-name">MyBot</h1>
+        <p class="muted">Wielofunkcyjny bot Discord</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#features">Funkcje</a>
+      <a href="#commands">Komendy</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div class="hero-left">
+        <h2 id="hero-title">Witaj na stronie MyBot</h2>
+        <p class="muted">Automatyczna moderacja, muzyka, ekonomia, oraz system ról.</p>
+        <div class="cta">
+          <a id="invite-link" class="btn primary" href="#" target="_blank">Zaproś bota</a>
+          <a id="support-link" class="btn ghost" href="#" target="_blank">Serwer wsparcia</a>
+        </div>
+      </div>
+      <div class="hero-right card status-card">
+        <div class="label">Status</div>
+        <div class="status-row">
+          <div class="dot" id="status-dot"></div>
+          <div>
+            <div id="status-text">Ładowanie...</div>
+            <div class="muted" id="status-detail">Brak połączenia z API</div>
+          </div>
+        </div>
+        <div class="stats">
+          <div><div class="muted">Serwery</div><div id="stat-guilds">—</div></div>
+          <div><div class="muted">Użytkownicy</div><div id="stat-users">—</div></div>
+          <div><div class="muted">Wersja</div><div id="bot-version">v1.0.0</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="card">
+      <div class="label">Funkcje</div>
+      <ul class="feature-list">
+        <li>Automatyczna moderacja: warny, mute, ban, logi.</li>
+        <li>Muzyka: kolejka, odtwarzanie z YouTube.</li>
+        <li>Ekonomia: waluta, sklep, daily rewards.</li>
+        <li>Role reaction, przypomnienia, custom prefix.</li>
+      </ul>
+    </section>
+
+    <section id="commands" class="card">
+      <div class="label">Przykładowe komendy</div>
+      <div class="command-list">
+        <div class="command"><div><strong>!help</strong><div class="muted">Wyświetla pomoc</div></div><div class="tag">Info</div></div>
+        <div class="command"><div><strong>!play [link/nazwa]</strong><div class="muted">Odtwarza muzykę</div></div><div class="tag">Muzyka</div></div>
+        <div class="command"><div><strong>!ban [@user]</strong><div class="muted">Banuje użytkownika</div></div><div class="tag">Moderacja</div></div>
+        <div class="command"><div><strong>!daily</strong><div class="muted">Dzienna nagroda</div></div><div class="tag">Ekonomia</div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <div class="label">Kontakt</div>
+      <p class="muted">Masz pytania? Napisz: kontakt@example.com</p>
+      <div class="label" style="margin-top:12px">Instrukcja szybkiego wdrożenia</div>
+      <ol class="muted">
+        <li>Edytuj plik <code>script.js</code> ustawiając BOT_NAME, INVITE_LINK i SUPPORT_LINK.</li>
+        <li>Wgraj pliki na hosting statyczny (GitHub Pages, Netlify, Vercel) lub serwer WWW.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> MyBot — Wszystkie prawa zastrzeżone.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

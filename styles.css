@@ -1,0 +1,30 @@
+/* Prosty, estetyczny styl dla strony bota */
+:root{--bg:#071028;--card:#0f1724;--accent:#06b6d4;--muted:#9aa6bf;--glass:rgba(255,255,255,0.03)}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#061226 0%, #071028 100%);color:#e6eef8}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;border-bottom:1px solid rgba(255,255,255,0.02)}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px}
+.muted{color:var(--muted)}
+.nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+.container{max-width:1100px;margin:26px auto;padding:0 20px;display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:900px){.container{grid-template-columns:2fr 1fr} .hero{grid-column:1/-1}}
+.card{background:linear-gradient(180deg,var(--glass),transparent);border:1px solid rgba(255,255,255,0.03);padding:18px;border-radius:12px}
+.hero{display:flex;justify-content:space-between;gap:18px;align-items:center}
+.hero-left{flex:1}
+.hero-right{width:320px;flex-shrink:0}
+.cta{display:flex;gap:8px;margin-top:12px}
+.btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.primary{background:linear-gradient(90deg,var(--accent),#0891b2);color:#022;box-shadow:0 8px 24px rgba(6,182,212,0.12)}
+.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.status-card .label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.status-row{display:flex;gap:12px;align-items:center;margin-top:10px}
+.dot{width:14px;height:14px;border-radius:999px;background:#9ca3af;box-shadow:0 0 8px rgba(0,0,0,.6)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+.label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.feature-list{margin-top:10px}
+.command-list{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.command{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.02)}
+.tag{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:8px;font-weight:700;color:var(--muted)}
+.site-footer{padding:18px;text-align:center;color:var(--muted);margin-top:18px}
+code{background:#071422;padding:2px 6px;border-radius:6px;color:#9fe3d7}
